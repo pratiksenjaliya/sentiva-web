@@ -1,35 +1,35 @@
 ---
 const pricing = [
   {
-    name: 'Basic',
-    description: 'For development, staging, and small production projects.',
-    periodicity: '/month',
-    price: '$10',
-    action: 'Buy Now',
-    features: ['5 Seats', '1,000 Projects', 'Lifetime access', 'Community Support'],
+    name: 'Basic Package',
+    description: 'Essential biomedical equipment for small clinics.',
+    periodicity: '',
+    price: 'Contact Us',
+    action: 'Get Quote',
+    features: ['ECG Machine', 'Patient Monitor', 'Defibrillator', 'Installation', '1 Year Warranty'],
   },
   {
-    name: 'Pro',
-    description: 'For high-scale and mission critical projects.',
+    name: 'Advanced Package',
+    description: 'Comprehensive equipment for hospitals and large clinics.',
     isFlagged: true,
-    periodicity: '/month',
-    price: '$25',
-    action: 'Buy Now',
-    features: ['10 Seats', '10,000 Projects', 'Lifetime access', 'Email Support', 'Free updates'],
+    periodicity: '',
+    price: 'Contact Us',
+    action: 'Get Quote',
+    features: ['All Basic Package items', 'MRI Machine', 'CT Scanner', 'Ultrasound System', 'Extended 3 Year Warranty', 'Priority Support'],
   },
   {
-    name: 'Team',
-    description: 'For teams with more security, support, and performance needs.',
+    name: 'Custom Solution',
+    description: 'Tailored equipment solutions for specialized medical facilities.',
     periodicity: '',
     price: 'Custom',
-    action: 'Buy Now',
+    action: 'Consult Now',
     features: [
-      'Unlimited Seats',
-      'Unlimited Projects',
-      'Lifetime access',
-      'Email and Chat Support',
-      'High-Performance',
-      'Free updates',
+      'Customized Equipment Selection',
+      'Integration Services',
+      'Staff Training',
+      'Ongoing Maintenance',
+      '24/7 Technical Support',
+      'Flexible Warranty Options',
     ],
   },
 ];
@@ -77,7 +77,7 @@ const pricing = [
               href="#"
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
-              Buy now
+              {item.action}
             </a>
           </div>
         ))
